@@ -4,7 +4,7 @@ if($_POST["submit"]) {
     $subject="Contact from Website"; //Subject 
     $sender=$_POST["name"];
     $senderEmail=$_POST["email"];
-    $message=$_POST["comments"];
+    $message=$_POST["message"];
     $mailBody="Name: $sender\nEmail Address: $senderEmail\n\nMessage: $message";
     mail($recipient, $subject, $mailBody);
     sleep(1);
